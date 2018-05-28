@@ -5,7 +5,7 @@ unit USMBShare;
 interface
 
 uses
-  Classes, SysUtils, Process, Dialogs, USMBThread;
+  Classes, SysUtils, Process, USMBThread;
 
 type
   TSMBShare = class
@@ -109,6 +109,14 @@ begin
     process.executable:='sh';
     process.parameters.add('-c');
     process.parameters.add('umount '+path);
+    process.Options:=process.Options + [poWaitOnExit, poUsePipes];
+    process.ShowWindow:=swoHIDE;
+    process.execute;
+    process.free;
+    process:=TProcess.create(nil);
+    process.executable:='sh';
+    process.parameters.add('-c');
+    process.parameters.add('rm -d '+path);
     process.Options:=process.Options + [poWaitOnExit, poUsePipes];
     process.ShowWindow:=swoHIDE;
     process.execute;

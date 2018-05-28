@@ -110,6 +110,7 @@
       <Unit13>
         <Filename Value="upingthread.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="UPingThread"/>
       </Unit13>
       <Unit14>
         <Filename Value="../../../Downloads/synapse-trunk/ssl_openssl.pas"/>
