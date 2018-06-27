@@ -144,6 +144,7 @@ begin
     pwfirst:=false;
   end;
   newpw2change(nil);
+  controlConfirmButton;
 end;
 
 procedure TRSPForm.reset;
@@ -168,6 +169,7 @@ begin
   else begin
     pwteacher:=false;
   end;
+  controlConfirmButton;
 end;
 
 procedure TRSPForm.newpw2Change(Sender: TObject);
