@@ -9,7 +9,8 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms, PCS, USMBShare, UGetMacAdress, UClientMachine, UGetIPAdress, UVNCView,
   UCreateImageThread, UControlMachineThread, UChangePassword,
-  UResetStudentPassword, USMBThread, UClientStatusThread, URequestThread;
+  UResetStudentPassword, USMBThread, UClientStatusThread, URequestThread,
+  ssl_openssl, ssl_openssl_lib;
 
 {$R *.res}
 
