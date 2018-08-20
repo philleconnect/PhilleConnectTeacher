@@ -212,8 +212,8 @@ procedure Twindow.FormCreate(Sender: TObject);
 var
    version, build: string;
 begin
-   version:='1.6.2';
-   build:='1G194';
+   version:='1.6.3';
+   //build:='1G194';
    groupFoldersMounted:=false;
    showedGroupfolderWarning:=false;
    allowOffline:=false;
@@ -222,19 +222,19 @@ begin
    networkRetry:=30;
    isOnline:=false;
    {$IFDEF WIN32}
-   versionLabel.Caption:='PhilleConnect Win32 v'+version+' Build '+build+' by Johannes Kreutz';
+   versionLabel.Caption:='PhilleConnect Win32 v'+version+' by Johannes Kreutz and Dirk Winkel';
    {$ENDIF}
    {$IFDEF WIN64}
-   versionLabel.Caption:='PhilleConnect Win64 v'+version+' Build '+build+' by Johannes Kreutz';
+   versionLabel.Caption:='PhilleConnect Win64 v'+version+' by Johannes Kreutz and Dirk Winkel';
    {$ENDIF}
    {$IFDEF LINUX}
-   versionLabel.Caption:='PhilleConnect Linux v'+version+' Build '+build+' by Johannes Kreutz';
+   versionLabel.Caption:='PhilleConnect Linux v'+version+' by Johannes Kreutz and Dirk Winkel';
    infoLabel.left:=infoLabel.left-8;
    usernames.height:=usernames.height-8;
    usernames.top:=usernames.top+8;
    {$ENDIF}
    {$IFDEF DARWIN}
-   versionLabel.Caption:='PhilleConnect macOS v'+version+' Build '+build+' by Johannes Kreutz';
+   versionLabel.Caption:='PhilleConnect macOS v'+version+' by Johannes Kreutz';
    infoLabel.left:=infoLabel.left-2;
    {$ENDIF}
    {$IFNDEF WINDOWS}
