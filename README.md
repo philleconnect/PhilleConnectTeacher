@@ -1,3 +1,5 @@
+__Archived: Not actively maintained anymore!__
+
 # PhilleConnectTeacher
 This is the Teacher client application of PhilleConnect. It allows you to connect to your private and the configured public drives, also you can watch the students monitors and control the workstations (e.g. internet, monitor-lock, wake on lan and shutdown)
 
